@@ -87,7 +87,7 @@ dotnet restore
 dotnet ef database update
 ```
 
-3. Run the application:
+4. Run the application:
 
 ```bash
 dotnet run
