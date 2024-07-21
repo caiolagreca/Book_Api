@@ -20,6 +20,7 @@ A robust RESTful API for managing a collection of books. Built with ASP.NET Core
 
 ## Project Structure
 
+```bash
 Book_Api/
 ├── Data/
 │ ├── BookStoreContext.cs
@@ -36,6 +37,7 @@ Book_Api/
 ├── Program.cs
 ├── appsettings.json
 └── README.md
+```
 
 ### Data
 
