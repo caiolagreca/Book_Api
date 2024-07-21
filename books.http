@@ -1,0 +1,34 @@
+@BookApi_HostAddress = http://localhost:5117
+
+GET {{BookApi_HostAddress}}/books
+Accept: application/json
+
+###
+GET {{BookApi_HostAddress}}/books/2
+ 
+###
+POST {{BookApi_HostAddress}}/books
+Content-Type: application/json
+
+{
+    "name": "Foundation",
+    "author": "-",
+    "categoryId": 4,
+    "price": 59.99,
+    "releaseDate": "1994-07-05"
+  }
+ 
+###
+PUT {{BookApi_HostAddress}}/books/2
+Content-Type: application/json
+
+  {
+    "name": "Hobbit",
+    "author": "Tolken",
+    "categoryId": 3,
+    "price": 19.99,
+    "releaseDate": "1994-07-05"
+  }
+
+###
+DELETE {{BookApi_HostAddress}}/books/2
