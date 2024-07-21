@@ -1,0 +1,36 @@
+# Arquivos e pastas do Visual Studio
+.vscode/
+.vs/
+*.csproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Diretórios de build
+bin/
+obj/
+out/
+
+# Logs, dados temporários e caches
+*.log
+*.cache
+*.temp
+*.tmp
+*.pid
+*.seed
+
+# Arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações de ambiente
+.env
+.env.local
+.env.*.local
+
+# Arquivos do Rider
+.idea/
+*.sln.iml
+*.sln.*
+*.Rider.*
