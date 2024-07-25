@@ -14,7 +14,7 @@ public static class BooksEndpoints
         var group = app.MapGroup("books").WithParameterValidation();
 
         //GET /books
-        group.MapGet("/", async (BookStoreContext dbContext) => await dbContext.Books.Include(book => book.Category).Select(book => book.ToBookDetailsDto()).AsNoTracking().ToListAsync());
+        group.MapGet("/", async (BookStoreContext dbContext) => await dbContext.Books.Include(book => book.Category).Select(book => book.ToBookDetailsDto()).AsNoTracking().ToListAsync()).RequireAuthorization();
 
         //GET /books/id
         group.MapGet("/{id}", async (int id, BookStoreContext dbContext) =>

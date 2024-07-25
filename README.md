@@ -180,6 +180,7 @@ dotnet add package MinimalApis.Extensions
 dotnet add package Microsoft.EntityFrameworkCore
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 
 dotnet ef migrations add InitialCreate --output-dir Data\Migrations //create the DB migrations; You can choose any name for InitialCreate
 dotnet ef database update //update the database

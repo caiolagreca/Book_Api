@@ -4,8 +4,7 @@ GET {{BookApi_HostAddress}}/books
 Accept: application/json
 
 ###
-GET {{BookApi_HostAddress}}/books/2
- 
+GET {{BookApi_HostAddress}}/books/3
 ###
 POST {{BookApi_HostAddress}}/books
 Content-Type: application/json
