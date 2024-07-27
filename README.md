@@ -180,7 +180,13 @@ dotnet add package MinimalApis.Extensions
 dotnet add package Microsoft.EntityFrameworkCore
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 dotnet add package Microsoft.EntityFrameworkCore.Design
+
+//1.  Adiciona suporte à autenticação JWT.
 dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+
+//caso queira gerar um token rapidamente pelo CLI para testes ou desenvolvimento:
+dotnet user-jwts create
+
 
 dotnet ef migrations add InitialCreate --output-dir Data\Migrations //create the DB migrations; You can choose any name for InitialCreate
 dotnet ef database update //update the database
